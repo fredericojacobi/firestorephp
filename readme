@@ -1,0 +1,10 @@
+Firestore SDK sem gRPC
+https://packagist.org/packages/morrislaptop/firestore-php#v2.1.3
+
+
+Erro consertado utilizando a versão mais antiga do firebase php e token
+https://github.com/morrislaptop/firestore-php/issues/15
+I had a similar issue and it turns out i was using a newer versions of krait/firebase so i reinstalled them with a lesser version as suggested by composer:
+"kreait/firebase-php": "4.15",
+"kreait/firebase-tokens": "1.8.1",
+and now seems to be working, hope it helps.
